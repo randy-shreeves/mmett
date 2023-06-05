@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
+    font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -6,4 +9,11 @@ body{
 .header{
     color: white;
     background-color: #1F2937
+}
+
+.header img{
+    max-width: 500px;
+    max-height: 250px;
+    height: auto;
+    flex: 1 1 auto;
 }
