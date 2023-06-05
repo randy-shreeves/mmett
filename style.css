@@ -1,0 +1,9 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    color: white;
+    background-color: #1F2937
+}
