@@ -24,10 +24,12 @@
                 <div class="hero-text">
                     <h2>Your Home Maintenance Expert</h2>
                     <p>Murray Mouth Electrial Testing & Tagging offers professional window and gutter cleaning, gardening services, smoke alarm testing, electrical testing and tagging, yard clean-ups, and flat pack installation. Trust us to get the job done efficiently and to the highest standard. All our services can be billed to NDIS or Home Care Packages. Contact us today to experience the convenience of our all-in-one services!</p>
-                    <button>Contact Us</button>
+                    <button><a href="#contact">Contact Us</a></button>
                 </div>
                 <div class="hero-img">
                     <img src="./img/mmett.png" alt="MMETT business logo">
+                    <p>ABN: 51808797712</p>
+                    <p>Phone: 0401691683</p>
                 </div>
             </div>
         </div>
@@ -78,13 +80,24 @@
         </div>
 
         <!-- Container for call to action portion of webpage -->
-        <div class="action">
+        <div class="contact-us">
             <!-- Seperate container for text so that it stacks vertically -->
-            <div class="action-text">
+            <div class="contact-us-text" id="contact">
                 <p><strong>Your Home Project Awaits</strong></p>
-                <p>Contact us to get get in touch today!</p>
+                <p>Contact us to get get in touch today!</p><br>
+                <!-- Form to submit request for service -->
+                <form action="/action_page.php" method="get">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Smith">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="Email" placeholder="email-address@email.com">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+                  </form>
             </div>
-            <button>Contact Us</button>
+            <button>Submit</button>
         </div>
 
         <!-- Container for footer -->

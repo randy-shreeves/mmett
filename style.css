@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html{
+   scroll-behavior: smooth; 
+}
+
 body{
     font-family: Roboto, sans-serif;
     display: flex;
@@ -65,13 +69,25 @@ header li{
     background-color: #3882F6;
     font-weight: bold;
     border-radius: 5px;
-    border-style: none;
+    border-style: solid;
+    border-color: white;
     padding: 8px 16px;
 }
 
-.hero-img img{
+.hero-container a{
+    text-decoration: none;
+}
+
+.hero-container a:visited{
+    color: white;
+}
+
+.hero-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 500px;
-    max-height: 250px;
     height: auto;
 }
 
@@ -126,23 +142,51 @@ header li{
     font-weight: bold;
 }
 
-.action{
+.contact-us{
     margin: 100px 200px;
     padding: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #3882F6;
+    background-color: #1F2937;
     color: white;
     border-radius: 5px;
 }
 
-.action-text p{
+.contact-us-text p{
     margin: 0px;
     padding: 0px;
 }
 
-.action button{
+form{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form *{
+    border-radius: 5px;
+    width: 400px;
+}
+
+form label{
+    text-decoration: underline;
+}
+
+form input{
+    height: 25px;
+    border: none;
+    overflow: hidden;
+}
+
+form textarea{
+    height: 100px;
+    resize: none;
+}
+
+.contact-us button{
+    font-size: 24px;
     color: white;
     background-color: #3882F6;
     border-color: white;
@@ -156,6 +200,6 @@ header li{
     justify-content: center;
     align-items: center;
     max-height: 100px;
-    color: #E5E7EB;
-    background-color: #1F2937
+    color: #1F2937;
+    background-color: #E5E7EB
 }
