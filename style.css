@@ -112,7 +112,7 @@ header li{
     background-color: #E5E7EB;
     font-size: 16px;
     color: #1F2937;
-    padding: 50px 350px;
+    padding: 50px 200px;
 }
 
 .testimonial h2{
@@ -127,14 +127,19 @@ header li{
 }
 
 .action{
-    margin: 100px 400px;
-    padding: 0px;
+    margin: 100px 200px;
+    padding: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
+}
+
+.action-text p{
+    margin: 0px;
+    padding: 0px;
 }
 
 .action button{
