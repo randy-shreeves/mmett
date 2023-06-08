@@ -8,6 +8,7 @@ body{
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    flex: 1 1 0;
     margin: 0;
     min-height: 100vh;
 }
@@ -15,10 +16,10 @@ body{
 .hero-container{
     display: flex;
     flex-direction: column;
+    min-width: 500px;
     padding: 0px 200px;
     color: #F9FAF8;
     background-color: #1F2937
-         
 }
 
 header{
@@ -35,11 +36,12 @@ header h1{
 
 header ul{
     margin: 0;
-    padding: 0;   
+    padding: 0;
+    white-space: nowrap;
 }
 
 header li{
-    display: inline;
+    display: inline-block;
     padding-left: 10px;
 }
 
@@ -51,7 +53,7 @@ header li{
 }
 
 .hero-text{
-    max-width: 500px;
+   max-width: 500px;
 }
 
 .hero-text h2{
@@ -87,12 +89,13 @@ header li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
     height: auto;
 }
 
 .information-container{
     text-align: center;
+    padding: 0px 200px;
+    min-width: 500px;
 }
 
 .information-container h2{
@@ -104,8 +107,8 @@ header li{
 .services{
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
-    padding: 50px 200px;
+    gap: 10px;
+    padding: 50px 0px;
 }
 
 .information-container img{
@@ -124,11 +127,12 @@ header li{
 .testimonial{
     display: flex;
     flex-flow: column wrap;
+    min-width: 500px;
     align-items: center;
     background-color: #E5E7EB;
     font-size: 16px;
     color: #1F2937;
-    padding: 50px 200px;
+    padding: 50px 200px;    
 }
 
 .testimonial h2{
@@ -147,6 +151,7 @@ header li{
     padding: 50px;
     display: flex;
     justify-content: space-around;
+    min-width: 500px;
     align-items: center;
     background-color: #1F2937;
     color: white;
@@ -177,7 +182,6 @@ form label{
 form input{
     height: 25px;
     border: none;
-    overflow: hidden;
 }
 
 form textarea{
@@ -199,6 +203,8 @@ form textarea{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 200px;
+    min-width: 500px;
     max-height: 100px;
     color: #1F2937;
     background-color: #E5E7EB
