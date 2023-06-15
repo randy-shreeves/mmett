@@ -8,13 +8,13 @@ body{
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
     margin: 0;
     min-height: 100vh;
 }
 
 .hero-container{
     display: flex;
+    flex: 1 1 0;
     flex-direction: column;
     min-width: 500px;
     padding: 0px 200px;
@@ -46,6 +46,7 @@ header li{
 }
 
 .hero-content{
+    flex: 1 1 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +54,8 @@ header li{
 }
 
 .hero-text{
-   max-width: 500px;
+    flex: 1 1 0;
+    max-width: 500px;
 }
 
 .hero-text h2{
@@ -84,7 +86,7 @@ header li{
     color: white;
 }
 
-.hero-img{
+.hero-img{    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,6 +95,7 @@ header li{
 }
 
 .information-container{
+    flex: 1 1 0;
     text-align: center;
     padding: 0px 200px;
     min-width: 500px;
@@ -108,7 +111,7 @@ header li{
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 
 .information-container img{
@@ -117,25 +120,26 @@ header li{
     border: solid;
     border-color: #3882F6;
     border-width: 3px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .info{
     max-width: 100px;
 }
 
-.testimonial{
+.testimonial-container{
+    flex: 1 1 0;
     display: flex;
     flex-flow: column wrap;
+    padding: 50px 200px;
     min-width: 500px;
     align-items: center;
     background-color: #E5E7EB;
     font-size: 16px;
-    color: #1F2937;
-    padding: 50px 200px;    
+    color: #1F2937;        
 }
 
-.testimonial h2{
+.testimonial-container h2{
     font-size: 36px;
     font-weight: bold;
     color: #1F2937;
@@ -146,12 +150,13 @@ header li{
     font-weight: bold;
 }
 
-.contact-us{
+.contact-us-container{
+    flex: 1 1 0;
+    display: flex;
     margin: 100px 200px;
     padding: 50px;
-    display: flex;
-    justify-content: space-around;
     min-width: 500px;
+    justify-content: space-around;
     align-items: center;
     background-color: #1F2937;
     color: white;
@@ -189,23 +194,23 @@ form textarea{
     resize: none;
 }
 
-.contact-us button{
+.contact-us-container button{
+    padding: 8px 16px;
     font-size: 24px;
     color: white;
     background-color: #3882F6;
     border-color: white;
     border-radius: 5px;
-    border-style: solid;
-    padding: 8px 16px;
+    border-style: solid; 
 }
 
 .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0px 200px;
     min-width: 500px;
     max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #1F2937;
     background-color: #E5E7EB
 }
